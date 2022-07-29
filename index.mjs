@@ -6,7 +6,6 @@ const stdlib = loadStdlib(process.env);
 //create test account
 const startingBalance = stdlib.parseCurrency(1000);
 const acc = await stdlib.newTestAccount(startingBalance);
-let tk =  null;
 
 //Set up functions for checking balance
 const fmt = (x) => stdlib.formatCurrency(x, 4);
